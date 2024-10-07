@@ -27,13 +27,13 @@ test("One euro should be 1.07 dollars", function() {
     expect(dollars).toBe(expected);
 });
 
-test("One dollar should be 156.5 yenes", function() {
+test("One dollar should be 146.3 yenes", function() {
     const yenes = fromDollarToYen(1);
     const expected = (1 / 1.07) * 156.5;
     expect(yenes).toBe(expected);
 });
 
-test("One yen should be 0.87 pounds", function() {
+test("One yen should be 0.005 pounds", function() {
     const pounds = fromYenToPound(1);
     const expected = (1 / 156.5) * 0.87;
     expect(pounds).toBe(expected);
